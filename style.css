@@ -1,0 +1,13 @@
+/* =================================
+    CSS VARIABLES
+   ================================= */
+:root {
+    --primary-color: #3d9eff;
+    --secondary-color: #766ED3;
+    --text-color: #333;
+    --secondary-text-color: #fff;
+    --background-color: #f4f4f4;
+    --title-font-family: 'Imbue', Arial, sans-serif;
+    --header-font-family: 'Notable', Arial, sans-serif;
+    --body-font-family: 'Freeman', Arial, sans-serif;
+}
