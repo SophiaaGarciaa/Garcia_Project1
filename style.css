@@ -302,33 +302,7 @@ img {
    white-space: nowrap;
    width: 2ch;
    border-right: 3px solid var(--main-color);
-   animation:
-         typing 1s steps(24) forwards,
-         blink 0.75s step-end 4,
-         hideCursor 0.1s ease 3s forwards;
    }
-
-@keyframes typing {
-   from {
-      width: 0;
-   }
-   to {
-      width: 100%;
-   }
-}
-
-@keyframes blink {
-   50% {
-      border-color: transparent;
-   }
-   
-}
-
-@keyframes hideCursor {
-   to {
-      border-color: transparent;
-   }
-}
 
 .hero-section .hero-content .hero-title {
    font-family: var(--font-headings);
