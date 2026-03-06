@@ -183,8 +183,6 @@ img {
 }
 
 .page-header .nav-cta {
-   /* display: inline-block; */
-   /* width: 8%; */
    background-color: var(--main-color);
    border: 2px solid transparent;
    text-decoration: none;
@@ -218,8 +216,6 @@ img {
 /* Ham Menu */
 .ham-checkbox {
    display: none;
-   /* visibility: hidden; */
-   /* opacity: 0;*/
 }
 
 .ham-btn {
@@ -292,10 +288,7 @@ img {
    display: flex;
    flex-direction: column;
    gap: var(--grid-gap-sm);
-   /* display: inline-block; */
    position: relative;
-   /* vertical-align: middle; */
-   /* width: 55%; */
    z-index: 2;
 }
 
