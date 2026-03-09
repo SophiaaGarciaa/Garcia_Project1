@@ -225,16 +225,25 @@ img {
 /* =================================
     SOUNDBOARD SECTION
    ================================= */
-.soundboard-section {
+aside .soundboard-section {
       background-color: var(--color-white);
       color: var(--color-black);
+      width: 30%;
+      float: left;
+      padding-right: 15px ;
+      margin-right: 15px;
    }
+
 /* =================================
     ARTICLES SECTION
    ================================= */
-   .articles-section {
+   aside .articles-section {
       background-color: var(--color-white);
       color: var(--color-black);
+      width: 30%;
+      float: right;
+      padding-left: 15px;
+      margin-left: 15px;
    }
 /* =================================
     INTERVIEWS SECTION
