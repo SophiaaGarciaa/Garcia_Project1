@@ -114,14 +114,28 @@ img {
     HEADER SECTION
    ================================= */
    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
       position: fixed;
+      gap: 10px;
+      padding: 18px 48px;
+      border-bottom: 1px solid var(--main-color-dark);
+      text-align: center;
       top: 0;
       left: 0;
       width: 100%;
       background-color: var(--main-color);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
+      z-index: 100;
       color: var(--color-white);
+   }
+
+   .page-header .nav-logo {
+      font-family: var(--font-headings);
+      font-size: 1.5rem;
+      padding: var(--space-md);
+   
    }
    
    /* Ham Menu */
