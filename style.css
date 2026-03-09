@@ -7,7 +7,6 @@
    --main-color-dark: #1687f9;
    --secondary-color: #ff6978;
    --third-color: #b943a8;
-   --color-gradient: linear-gradient(0deg, var(--main-color) 5%, var(--secondary-color) 46%, var(--third-color) 77%);
    --color-black: #000;
    --color-white: #fff;
    --color-text-muted: #999999;
@@ -87,7 +86,7 @@ body {
 
 h1 {font-family: var(--font-headings);}
 
-h2, h3, h4, p {font-family: var(--font-size-body);}
+h2, h3, h4, p {font-family: var(--font-body);}
 
 a {
    color: inherit;
@@ -176,7 +175,7 @@ img {
    display: flex;
    flex-direction: row;
    align-items: center;
-   gap: var(--hero-padding);
+   gap: var(--space-md);
    justify-content: space-between;
    background-image: url(assets/images/hero-background-image.jpg);
    background-size: cover;
@@ -192,8 +191,7 @@ img {
    justify-content: center;
    width: 100%;
    border-radius: 1rem;
-   width: 100%;
-   box-shadow: 0 8 30px var(--main-color-dark)
+   box-shadow: 0 8px 30px var(--main-color-dark)
 }
 
 .hero-label {
@@ -216,7 +214,7 @@ img {
 /* =================================
     SOUNDBOARD SECTION
    ================================= */
-aside .soundboard-section {
+.soundboard-section {
    background-color: var(--color-white);
    color: var(--color-black);
    width: 30%;
@@ -228,7 +226,7 @@ aside .soundboard-section {
 /* =================================
     ARTICLES SECTION
    ================================= */
-aside .articles-section {
+.articles-section {
    background-color: var(--color-white);
    color: var(--color-black);
    width: 30%;
