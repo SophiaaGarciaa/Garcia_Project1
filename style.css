@@ -91,7 +91,10 @@ h1 {
 
 
 
-h2, h3, h4, p {
+h2,
+h3,
+h4,
+p {
    font-family: var(--font-size-body);
 }
 
@@ -113,32 +116,32 @@ img {
 /* =================================
     HEADER SECTION
    ================================= */
-   .page-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      position: fixed;
-      gap: 10px;
-      padding: 18px 48px;
-      border-bottom: 1px solid var(--main-color-dark);
-      text-align: center;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: var(--main-color);
-      z-index: 100;
-      color: var(--color-white);
-   }
+.page-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   position: fixed;
+   gap: 10px;
+   padding: 18px 48px;
+   border-bottom: 1px solid var(--main-color-dark);
+   text-align: center;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: var(--main-color);
+   z-index: 100;
+   color: var(--color-white);
+}
 
-   .page-header .nav-logo {
-      font-family: var(--font-headings);
-      font-size: 1.5rem;
-      padding: var(--space-md);
-   
-   }
-   
-   /* Ham Menu */
+.page-header .nav-logo {
+   font-family: var(--font-headings);
+   font-size: 1.5rem;
+   padding: var(--space-md);
+
+}
+
+/* Ham Menu */
 .ham-checkbox {
    display: none;
 }
@@ -160,84 +163,101 @@ img {
    transform-origin: center;
 }
 
-.ham-checkbox:checked ~ .ham-btn span:nth-child(1) {
+.ham-checkbox:checked~.ham-btn span:nth-child(1) {
    transform: translateY(7px) rotate(45deg);
 }
 
-.ham-checkbox:checked ~ .ham-btn span:nth-child(2) {
+.ham-checkbox:checked~.ham-btn span:nth-child(2) {
    opacity: 0;
 }
 
-.ham-checkbox:checked ~ .ham-btn span:nth-child(3) {
+.ham-checkbox:checked~.ham-btn span:nth-child(3) {
    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* =================================
     HERO SECTION
    ================================= */
-   .hero-section {
-    position: relative;
-    background-color: #0a0a0a;
-    overflow: hidden;
-    padding: 0;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--hero-padding);
-    justify-content: space-between;
+.hero-section {
+   position: relative;
+   background-color: #0a0a0a;
+   overflow: hidden;
+   padding: 0;
+   height: 400px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: var(--hero-padding);
+   justify-content: space-between;
 }
 
 .hero-section .hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: cover;
-    z-index: 1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   object-fit: cover;
+   z-index: 1;
 }
 
 .hero-image-wrapper {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-radius: 1rem;
-    width: 100%;
-    box-shadow: 0 8 30px var(--main-color-dark)
+   position: relative;
+   z-index: 2;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   border-radius: 1rem;
+   width: 100%;
+   box-shadow: 0 8 30px var(--main-color-dark)
 }
+
 /* =================================
     NEW MUSIC SECTION
    ================================= */
-
+   .new-music-section {
+      background: linear-gradient(0deg, var(--main-color) 5%, var(--secondary-color) 46%, var(--third-color) 77%);
+      color: var(--color-white);
+   }
 /* =================================
     SOUNDBOARD SECTION
    ================================= */
-
+.soundboard-section {
+      background-color: var(--color-white);
+      color: var(--color-black);
+   }
 /* =================================
     ARTICLES SECTION
    ================================= */
-
+   .articles-section {
+      background-color: var(--color-white);
+      color: var(--color-black);
+   }
 /* =================================
     INTERVIEWS SECTION
    ================================= */
-
+.interviews-section {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      border-top: 5px solid var(--main-color);
+   }
 /* =================================
     FOOTER SECTION
    ================================= */
-
+   .page-footer {
+      background-color: var(--main-color);
+      color: var(--color-white);
+      border-top: 1px solid var(--main-color-dark);
+   }
 /* =================================
     MEDIA QUERIES
    ================================= */
-   /* DESKTOP FIRST */
-@media (max-width: 1024px) {
-   
-}
+/* DESKTOP */
+@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
+
    /* Show hamburger, hide desktop nav */
    .ham-btn {
       display: flex;
@@ -252,31 +272,11 @@ img {
       order: 3;
    }
 
-   .ham-checkbox:checked ~ .main-nav {
+   .ham-checkbox:checked~.main-nav {
       display: flex !important;
    }
 }
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
-@media (max-width: 320px) {
-   
-}
-
-/* MOBILE FIRST */
-@media (min-width: 480px) {
-   
-}
-
-@media (min-width: 768px) {
-   
-}
-
-@media (min-width: 1024px) {
-   
-}
-
-@media (min-width: 1200px) {
-   
-}
+@media (max-width: 320px) {}
