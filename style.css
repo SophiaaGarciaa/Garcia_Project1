@@ -112,7 +112,16 @@ img {
 /* =================================
     HEADER SECTION
    ================================= */
-   
+   .page-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--main-color);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      color: var(--color-white);
+   }
    
    /* Ham Menu */
 .ham-checkbox {
@@ -131,7 +140,7 @@ img {
    display: block;
    width: 24px;
    height: 2px;
-   background-color: var(--color-black);
+   background-color: var(--color-white);
    transition: all var(--transition-base);
    transform-origin: center;
 }
