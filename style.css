@@ -83,8 +83,6 @@ body {
    padding-top: 4rem;
    font-family: var(--font-body);
    font-size: var(--font-size-body);
-   background-color: var(--color-white);
-}
 
 h1 {
    font-family: var(--font-headings);
@@ -114,6 +112,41 @@ img {
 /* =================================
     HEADER SECTION
    ================================= */
+   
+   
+   /* Ham Menu */
+.ham-checkbox {
+   display: none;
+}
+
+.ham-btn {
+   display: none;
+   flex-direction: column;
+   gap: 5px;
+   cursor: pointer;
+   padding: 4px;
+}
+
+.ham-btn span {
+   display: block;
+   width: 24px;
+   height: 2px;
+   background-color: var(--color-black);
+   transition: all var(--transition-base);
+   transform-origin: center;
+}
+
+.ham-checkbox:checked ~ .ham-btn span:nth-child(1) {
+   transform: translateY(7px) rotate(45deg);
+}
+
+.ham-checkbox:checked ~ .ham-btn span:nth-child(2) {
+   opacity: 0;
+}
+
+.ham-checkbox:checked ~ .ham-btn span:nth-child(3) {
+   transform: translateY(-7px) rotate(-45deg);
+}
 
 /* =================================
     HERO SECTION
@@ -142,3 +175,51 @@ img {
 /* =================================
     MEDIA QUERIES
    ================================= */
+   /* DESKTOP FIRST */
+@media (max-width: 1024px) {
+   
+}
+
+@media (max-width: 768px) {
+   /* Show hamburger, hide desktop nav */
+   .ham-btn {
+      display: flex;
+   }
+
+   .main-nav {
+      display: none !important;
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+      padding-top: var(--space-md);
+      order: 3;
+   }
+
+   .ham-checkbox:checked ~ .main-nav {
+      display: flex !important;
+   }
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 320px) {
+   
+}
+
+/* MOBILE FIRST */
+@media (min-width: 480px) {
+   
+}
+
+@media (min-width: 768px) {
+   
+}
+
+@media (min-width: 1024px) {
+   
+}
+
+@media (min-width: 1200px) {
+   
+}
