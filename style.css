@@ -1,7 +1,7 @@
 /* =================================
     CSS VARIABLES
    ================================= */
-:root {
+   :root {
    /* Brand Color */
    --main-color: #3D9EFF;
    --main-color-dark: #1687f9;
@@ -85,27 +85,16 @@ body {
    font-size: var(--font-size-body);
 }
 
-h1 {
-   font-family: var(--font-headings);
-}
+h1 {font-family: var(--font-headings);}
 
-
-
-h2,
-h3,
-h4,
-p {
-   font-family: var(--font-size-body);
-}
+h2, h3, h4, p {font-family: var(--font-size-body);}
 
 a {
    color: inherit;
    text-decoration: none;
 }
 
-a:hover {
-   text-decoration: underline;
-}
+a:hover {text-decoration: underline;}
 
 img {
    max-width: 100%;
@@ -206,6 +195,7 @@ img {
    width: 100%;
    box-shadow: 0 8 30px var(--main-color-dark)
 }
+
 .hero-label {
    color: var(--main-color);
 }
@@ -218,49 +208,53 @@ img {
 /* =================================
     NEW MUSIC SECTION
    ================================= */
-   .new-music-section {
-      background: linear-gradient(0deg, var(--main-color) 5%, var(--secondary-color) 46%, var(--third-color) 77%);
-      color: var(--color-white);
-   }
+.new-music-section {
+   background: linear-gradient(0deg, var(--main-color) 5%, var(--third-color) 46%, var(--secondary-color) 77%);
+   color: var(--color-white);
+}
+
 /* =================================
     SOUNDBOARD SECTION
    ================================= */
 aside .soundboard-section {
-      background-color: var(--color-white);
-      color: var(--color-black);
-      width: 30%;
-      float: left;
-      padding-right: 15px ;
-      margin-right: 15px;
-   }
+   background-color: var(--color-white);
+   color: var(--color-black);
+   width: 30%;
+   float: left;
+   padding-right: 15px;
+   margin-right: 15px;
+}
 
 /* =================================
     ARTICLES SECTION
    ================================= */
-   aside .articles-section {
-      background-color: var(--color-white);
-      color: var(--color-black);
-      width: 30%;
-      float: right;
-      padding-left: 15px;
-      margin-left: 15px;
-   }
+aside .articles-section {
+   background-color: var(--color-white);
+   color: var(--color-black);
+   width: 30%;
+   float: right;
+   padding-left: 15px;
+   margin-left: 15px;
+}
+
 /* =================================
     INTERVIEWS SECTION
    ================================= */
 .interviews-section {
-      background-color: var(--color-white);
-      color: var(--color-black);
-      border-top: 5px solid var(--main-color);
-   }
+   background-color: var(--color-white);
+   color: var(--color-black);
+   border-top: 5px solid var(--main-color);
+}
+
 /* =================================
     FOOTER SECTION
    ================================= */
-   .page-footer {
-      background-color: var(--main-color);
-      color: var(--color-white);
-      border-top: 1px solid var(--main-color-dark);
-   }
+.page-footer {
+   background-color: var(--main-color);
+   color: var(--color-white);
+   border-top: 1px solid var(--main-color-dark);
+}
+
 /* =================================
     MEDIA QUERIES
    ================================= */
