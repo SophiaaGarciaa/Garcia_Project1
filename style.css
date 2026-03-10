@@ -278,7 +278,12 @@ img {
 /* =======================================
     GRID: NEW MUSIC,SOUNDBOARD, & ARTICLE
    ================================= */
-
+   .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      align-items: start;
+      border-top: 4px solid var(--main-color);
+   }
 /* =================================
     NEW MUSIC SECTION
    ================================= */
@@ -488,6 +493,40 @@ img {
 
 .interviews-content .interview-box {
    display: grid;
+   grid-template-columns: 300px 1fr;
+   grid-template-rows: auto auto auto;
+   column-gap: var(--space-xl);
+   align-items: start;
+}
+
+.video-wrapper {
+   grid-row: 1 / 4;
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+}
+
+.interview-title {
+   font-family: var(--font-body);
+   font-size: var(--font-size-section);
+   color: var(--color-black);
+   align-self: end;
+   line-height: 1.5;
+   margin-top: var(--space-md);
+}
+
+.interview-subtitle {
+   color: var(--color-black);
+   font-family: var(--font-body);
+   font-size: var(--font-size-small);
+   margin-top: var(--space-xs);
+}
+
+.interview-description {
+   color: #4a4a4a;
+   font-family: var(--font-body);
+   font-size: var(--font-body);
+   line-height: 1.5;
 }
 
 /* =================================
@@ -496,7 +535,45 @@ img {
 .page-footer {
    background-color: var(--main-color);
    color: var(--color-white);
+   padding: 24px 48px;
    border-top: 1px solid var(--main-color-dark);
+   display: grid;
+   grid-template-columns: 1fr auto auto;
+   grid-template-rows: auto auto;
+   column-gap: var(--space-md);
+   align-items: start;
+}
+
+.page-footer .footer-logo {
+   font-family: var(--font-headings);
+   font-size: 1.6rem;
+   display: flex;
+   align-items: center;
+   gap: var(--space-sm);
+}
+
+.copyright {
+   font-size: var(--font-size-meta);
+   color: var(--color-white);
+   margin-top: var(--space-xs);
+}
+
+.site-map, 
+.contacts {
+   display: flex;
+   flex-direction: column;
+   gap: var(--space-xs)
+}
+
+.site-map-link,
+.contact-link {
+   font-size: var(--font-size-small);
+   color: var(--color-white);
+}
+
+.site-map-link:hover,
+.contact-link:hover {
+   color: var(--color-text-muted);
 }
 
 /* =================================
