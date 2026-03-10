@@ -1,7 +1,7 @@
 /* =================================
     CSS VARIABLES
    ================================= */
-   :root {
+:root {
    /* Brand Color */
    --main-color: #3D9EFF;
    --main-color-dark: #1687f9;
@@ -11,7 +11,7 @@
    --color-black: #000;
    --color-white: #fff;
    --color-text-muted: #999999;
-  
+
 
    /* Typograhy */
    --font-headings: 'Notable', Arial, sans-serif;
@@ -86,9 +86,16 @@ body {
    font-size: var(--font-size-body);
 }
 
-h1 {font-family: var(--font-headings);}
+h1 {
+   font-family: var(--font-headings);
+}
 
-h2, h3, h4, p {font-family: var(--font-body);}
+h2,
+h3,
+h4,
+p {
+   font-family: var(--font-body);
+}
 
 a {
    color: inherit;
@@ -269,6 +276,7 @@ img {
    color: var(--color-white);
    transition: background-color var(--transition-fast), color var(--transition-fast);
 }
+
 .btn:hover {
    background-color: var(--main-color-dark);
    color: var(--color-white);
@@ -278,12 +286,13 @@ img {
 /* =======================================
     GRID: NEW MUSIC,SOUNDBOARD, & ARTICLE
    ================================= */
-   .grid {
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      align-items: start;
-      border-top: 4px solid var(--main-color);
-   }
+.grid {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   align-items: start;
+   border-top: 4px solid var(--main-color);
+}
+
 /* =================================
     NEW MUSIC SECTION
    ================================= */
@@ -358,6 +367,7 @@ img {
 .icon-link:hover {
    color: #3D9EFF;
 }
+
 /* =================================
     SOUNDBOARD SECTION
    ================================= */
@@ -460,6 +470,7 @@ img {
    color: #cbcbcb;
    margin-top: var(--space-xs);
 }
+
 /* =================================
     INTERVIEWS SECTION
    ================================= */
@@ -495,7 +506,7 @@ img {
    position: relative;
    width: 100%;
    aspect-ratio: 16 / 9;
-} 
+}
 
 .video-wrapper iframe {
    position: absolute;
@@ -556,10 +567,15 @@ img {
    margin-top: var(--space-xs);
 }
 
-.site-map {grid-column: 2;}
-.contacts {grid-column: 3;}
+.site-map {
+   grid-column: 2;
+}
 
-.site-map, 
+.contacts {
+   grid-column: 3;
+}
+
+.site-map,
 .contacts {
    display: flex;
    flex-direction: column;
@@ -619,9 +635,11 @@ img {
       grid-template-columns: repeat(3, 1fr);
       gap: var(--space-md)
    }
+
    .interview-box {
       grid-template-columns: 200px 1fr;
    }
+
    .page-footer {
       grid-template-columns: 1fr auto auto;
    }
@@ -667,7 +685,9 @@ img {
       text-align: left;
    }
 
-   .hero-content {max-width: 100%;}
+   .hero-content {
+      max-width: 100%;
+   }
 
    .hero-image-wrapper {
       width: 70%;
@@ -709,6 +729,7 @@ img {
       width: 100%;
       max-width: 100%;
    }
+
    .interview-title {
       grid-row: 2;
       margin-top: var(--space-md);
@@ -717,9 +738,11 @@ img {
    .interview-subtitle {
       grid-row: 3;
    }
+
    .interview-description {
       grid-row: 4;
    }
+
    .interviews-section {
       padding: 80px 24px;
    }
@@ -753,19 +776,22 @@ img {
    }
 
    .hero-buttons {
-      flex-wrap:wrap;
+      flex-wrap: wrap;
    }
 
    .new-music-box {
       grid-template-columns: 80px 1fr;
    }
+
    .album-wrapper {
       width: 80px;
       height: 80px;
    }
+
    .interview-box {
       gap: var(--space-md);
    }
+
    .page-footer {
       grid-template-columns: 1fr;
    }
