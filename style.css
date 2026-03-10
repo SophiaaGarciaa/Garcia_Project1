@@ -95,7 +95,7 @@ a {
    text-decoration: none;
 }
 
-a:hover {text-decoration: underline;}
+a:hover {text-decoration: none;}
 
 img {
    max-width: 100%;
@@ -126,9 +126,31 @@ img {
 
 .page-header .nav-logo {
    font-family: var(--font-headings);
-   font-size: 1.5rem;
-   padding: var(--space-md);
+   font-size: 1.6rem;
+   letter-spacing: .15rem;
+   display: flex;
+   align-items: center;
+   gap: var(--space-md);
+}
 
+.nav-link-active {
+   color: var(--color-white);
+   font-family: var(--font-headings);
+}
+
+.nav-link {
+   color: var(--color-white);
+   font-family: var(--font-body);
+}
+
+.nav-link:hover {
+   color: var(--color-text-muted);
+}
+
+.main-nav {
+   display: flex;
+   align-items: center;
+   gap: var(--space-xl);
 }
 
 /* Ham Menu */
