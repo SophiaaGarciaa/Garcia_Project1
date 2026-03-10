@@ -363,6 +363,33 @@ img {
    border-right: 4px solid var(--main-color);
 }
 
+.soundboard-section .soundboard-header {
+   font-size: var(--font-size-section-lg);
+   margin-bottom: var(--space-xl);
+   letter-spacing: 0.15rem;
+}
+
+.soundboard-content {
+   display: flex;
+   flex-direction: column;
+   gap: var(--space-md);
+}
+
+.soundboard-content .soundboard-box {
+   display: flex;
+   align-items: flex-start;
+   gap: var(--space-md);
+   padding: var(--space-md);
+   border: 1px solid #e0e0e0;
+   border-radius: var(--radius-md);
+   background-color: var(--color-white);
+   transition: box-shadow var(--transition-fast);
+}
+
+.soundboard-box:hover {
+   box-shadow: var(--shadow-card);
+}
+
 /* =================================
     ARTICLES SECTION
    ================================= */
