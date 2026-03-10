@@ -244,7 +244,7 @@ img {
    max-width: 420px;
    overflow: hidden;
    border-radius: 1rem;
-   box-shadow: 0 8px 30px var(--main-color-dark)
+   box-shadow: 0 8px 30px var(--main-color-dark);
 }
 
 .hero-image {
@@ -290,7 +290,7 @@ img {
 .new-music-section {
    background: linear-gradient(0deg, var(--fourth-color) 5%, var(--third-color) 46%, var(--secondary-color) 77%);
    color: var(--color-white);
-   padding: 80px 48px;
+   padding: 40px 24px;
 }
 
 .new-music-section .new-music header {
@@ -364,7 +364,7 @@ img {
 .soundboard-section {
    background-color: var(--color-white);
    color: var(--color-black);
-   padding: 80px 24px;
+   padding: 40px 24px;
    border-right: 4px solid var(--main-color);
 }
 
@@ -389,7 +389,6 @@ img {
    border-radius: var(--radius-md);
    background-color: var(--color-white);
    transition: box-shadow var(--transition-fast);
-   display: flex;
    flex-direction: column;
 }
 
@@ -421,7 +420,7 @@ img {
 .articles-section {
    background-color: var(--color-white);
    color: var(--color-white);
-   padding: 80px 24px;
+   padding: 40px 24px;
    border-left: 4px solid var(--main-color);
 }
 
@@ -468,7 +467,7 @@ img {
    background-color: var(--color-white);
    color: var(--color-black);
    border-top: 4px solid var(--main-color);
-   padding: 80px 48px;
+   padding: 40px 24px;
 }
 
 .interviews-section .interviews-header {
@@ -552,7 +551,7 @@ img {
 
 .copyright {
    grid-column: 1;
-   font-size: var(--font-size-meta);
+   font-size: 0.75rem;
    color: var(--color-white);
    margin-top: var(--space-xs);
 }
