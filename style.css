@@ -319,10 +319,39 @@ img {
    flex-shrink: 0;
 }
 
-.new-music-image {
+.album-wrapper .new-music-image {
    width: 100%;
    height: 100%;
    object-fit: cover;
+}
+
+.new-music-box-title {
+   font-family: var(--font-body);
+   font-size: var(--font-size-section);
+   color: var(--color-white);
+   margin-top: var(--space-sm);
+   align-self: end;
+}
+
+.new-music-box-description {
+   font-size: var(--font-size-small);
+   color: var(--color-white);
+}
+
+.icon-wrapper {
+   display: flex;
+   gap: var(--space-md);
+   align-items: center;
+   margin-top: var(--space-xs);
+}
+
+.icon-link {
+   font-size: 1.5rem;
+   color: var(--color-white);
+}
+
+.icon-link:hover {
+   color: #3D9EFF;
 }
 /* =================================
     SOUNDBOARD SECTION
@@ -330,7 +359,8 @@ img {
 .soundboard-section {
    background-color: var(--color-white);
    color: var(--color-black);
-   padding: var(--section-padding) (var(--space-lg))
+   padding: 80px 24px;
+   border-right: 4px solid var(--main-color);
 }
 
 /* =================================
