@@ -289,7 +289,7 @@ img {
 .grid {
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
-   align-items: start;
+   align-items: stretch;
    border-top: 4px solid var(--main-color);
 }
 
@@ -299,11 +299,12 @@ img {
 .new-music-section {
    background: linear-gradient(0deg, var(--fourth-color) 5%, var(--third-color) 46%, var(--secondary-color) 77%);
    color: var(--color-white);
-   padding: 40px 24px;
+   padding: 40px 32px;
 }
 
-.new-music-section .new-music header {
-   font-size: var(--font-size-section-lg);
+.new-music-section .new-music-header {
+   font-size: var(--font-size-section);
+   padding-bottom: 15px;
    text-align: center;
    letter-spacing: .15rem;
    margin-bottom: var(--space-xl);
@@ -312,22 +313,24 @@ img {
 .new-music-content {
    display: flex;
    flex-direction: column;
-   gap: var(--space-xl);
+   gap: var(--space-2xl);
+   justify-self: center;
 }
 
 .new-music-box {
    display: grid;
-   grid-template-columns: 100px 1fr;
+   width: 100%;
+   grid-template-columns: 190px 1fr;
    grid-template-rows: auto auto auto;
    column-gap: var(--space-lg);
-   row-gap: var(--space-xs);
+   row-gap: var(--space-md);
    align-items: start;
 }
 
 .album-wrapper {
    grid-row: 1 / 4;
-   width: 100px;
-   height: 100px;
+   width: 190px;
+   height: 190px;
    border-radius: var(--radius-md);
    overflow: hidden;
    flex-shrink: 0;
@@ -348,7 +351,7 @@ img {
 }
 
 .new-music-box-description {
-   font-size: var(--font-size-small);
+   font-size: var(--font-size-body);
    color: var(--color-white);
 }
 
@@ -374,12 +377,12 @@ img {
 .soundboard-section {
    background-color: var(--color-white);
    color: var(--color-black);
-   padding: 40px 24px;
+   padding: 40px 16px;
    border-right: 4px solid var(--main-color);
 }
 
 .soundboard-section .soundboard-header {
-   font-size: var(--font-size-section-lg);
+   font-size: var(--font-size-section);
    margin-bottom: var(--space-xl);
    letter-spacing: 0.15rem;
 }
@@ -418,9 +421,9 @@ img {
 }
 
 .soundboard-box-description {
-   font-size: var(--font-size-small);
+   font-size: 0.75rem;
    color: #4a4a4a;
-   margin-top: 5px;
+   margin-top: 2px;
 }
 
 
@@ -430,12 +433,14 @@ img {
 .articles-section {
    background-color: var(--color-white);
    color: var(--color-white);
-   padding: 40px 24px;
+   padding: 40px 16px;
    border-left: 4px solid var(--main-color);
+   display: flex;
+   flex-direction: column;
 }
 
 .articles-section .articles-header {
-   font-size: var(--font-size-section-lg);
+   font-size: var(--font-size-section);
    color: var(--color-black);
    margin-bottom: var(--space-xl);
    letter-spacing: 0.15rem;
@@ -444,14 +449,16 @@ img {
 .articles-content {
    display: flex;
    flex-direction: column;
-   gap: var(--space-md);
+   gap: var(--space-lg);
+   justify-content: space-between;
+   flex: 1;
 }
 
 .articles-content .article-box {
    background-color: var(--fourth-color);
    color: var(--color-white);
    border-radius: var(--radius-md);
-   padding: 16px 24px;
+   padding: 24px 24px;
 }
 
 .article-link {
@@ -491,6 +498,7 @@ img {
    display: flex;
    flex-direction: column;
    gap: var(--space-2xl);
+   justify-self: center;
 }
 
 .interviews-content .interview-box {
@@ -554,7 +562,7 @@ img {
 
 .page-footer .footer-logo {
    font-family: var(--font-headings);
-   font-size: 1.6rem;
+   font-size: 2rem;
    display: flex;
    align-items: center;
    gap: var(--space-sm);
