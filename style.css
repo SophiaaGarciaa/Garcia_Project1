@@ -475,12 +475,12 @@ img {
 }
 
 .article-link:hover {
-   color: #999999;
+   color: #c5c5c5;
 }
 
 .article-box-subtitle {
    font-size: var(--font-size-body);
-   color: #cbcbcb;
+   color: #ffffff;
    margin-top: var(--space-xs);
 }
 
@@ -495,7 +495,7 @@ img {
 }
 
 .interviews-section .interviews-header {
-   font-size: var(--font-size-section-lg);
+   font-size: var(--font-size-section);
    margin-bottom: var(--space-xl);
    letter-spacing: 0.15rem;
 }
