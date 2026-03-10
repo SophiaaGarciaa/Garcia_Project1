@@ -231,7 +231,7 @@ img {
 .hero-title {
    font-size: var(--font-size-hero);
    color: var(--color-white);
-   transform: uppercase;
+   text-transform: uppercase;
    line-height: 1.05;
 }
 
@@ -262,7 +262,7 @@ img {
 }
 
 .hero-buttons .btn {
-   border-color: 2px solid var(--main-color);
+   border: 2px solid var(--main-color);
    border-radius: var(--radius-pill);
    padding: 8px 22px;
    background-color: var(--main-color);
@@ -389,25 +389,16 @@ img {
    border-radius: var(--radius-md);
    background-color: var(--color-white);
    transition: box-shadow var(--transition-fast);
+   display: flex;
+   flex-direction: column;
 }
 
 .soundboard-box:hover {
    box-shadow: var(--shadow-card);
 }
 
-.soundboard-box .fa-circle-play {
-   font-size: 1.8rem;
-   color: var(--color-black);
-   line-height: 1;
-   transition: color var(--transition-fast);
-}
-
-.soundboard-box .fa-circle-play:hover {
-   color: #1687f9;
-}
-
 .soundboard-audio {
-   display: none;
+   width: 100%;
 }
 
 .soundboard-box-title {
@@ -429,13 +420,14 @@ img {
    ================================= */
 .articles-section {
    background-color: var(--color-white);
-   color: var(--color-black);
+   color: var(--color-white);
    padding: 80px 24px;
    border-left: 4px solid var(--main-color);
 }
 
 .articles-section .articles-header {
    font-size: var(--font-size-section-lg);
+   color: var(--color-black);
    margin-bottom: var(--space-xl);
    letter-spacing: 0.15rem;
 }
@@ -446,7 +438,7 @@ img {
    gap: var(--space-md);
 }
 
-.articles-content .articles-box {
+.articles-content .article-box {
    background-color: var(--fourth-color);
    color: var(--color-white);
    border-radius: var(--radius-md);
@@ -456,17 +448,17 @@ img {
 .article-link {
    font-family: var(--font-body);
    font-size: var(--font-size-card-title);
-   color: var(--color-black);
+   color: var(--color-white);
    line-height: 1.4;
 }
 
 .article-link:hover {
-   color: var(--color-text-muted);
+   color: #999999;
 }
 
 .article-box-subtitle {
    font-size: var(--font-size-small);
-   color: #4a4a4a;
+   color: #cbcbcb;
    margin-top: var(--space-xs);
 }
 /* =================================
