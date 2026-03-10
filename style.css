@@ -503,7 +503,13 @@ img {
    grid-row: 1 / 4;
    position: relative;
    width: 100%;
-   overflow: hidden;
+   aspect-ratio: 16 / 9;
+} 
+
+.video-wrapper iframe {
+   position: absolute;
+   width: 100%;
+   height: 100%;
 }
 
 .interview-title {
@@ -553,16 +559,20 @@ img {
 }
 
 .copyright {
+   grid-column: 1;
    font-size: var(--font-size-meta);
    color: var(--color-white);
    margin-top: var(--space-xs);
 }
 
+.site-map {grid-column: 2;}
+.contacts {grid-column: 3;}
+
 .site-map, 
 .contacts {
    display: flex;
    flex-direction: column;
-   gap: var(--space-xs)
+   gap: var(--space-xs);
 }
 
 .site-map-link,
@@ -580,7 +590,51 @@ img {
     MEDIA QUERIES
    ================================= */
 /* DESKTOP */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+   .grid {
+      display: block;
+   }
+
+   .soundboard-section {
+      border-right: none;
+      border-top: 4px solid var(--main-color);
+      padding: 80px 48px;
+      width: 100%;
+   }
+
+   .soundboard-header {
+      text-align: center;
+   }
+
+   .soundboard-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-md);
+   }
+
+   .articles-section {
+      border-left: none;
+      border-top: 4px solid var(--main-color);
+      padding: 80px 48px;
+      width: 100%;
+   }
+
+   .articles-header {
+      text-align: center;
+   }
+
+   .articles-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md)
+   }
+   .interview-box {
+      grid-template-columns: 200px 1fr;
+   }
+   .page-footer {
+      grid-template-columns: 1fr auto auto;
+   }
+}
 
 @media (max-width: 768px) {
 
@@ -601,8 +655,127 @@ img {
    .ham-checkbox:checked~.main-nav {
       display: flex !important;
    }
+
+   .page-header {
+      padding: 0 20px;
+      flex-wrap: wrap;
+      height: auto;
+      padding-top: 12px;
+      padding-bottom: 12px;
+   }
+
+   body {
+      padding-top: 56px;
+   }
+
+   .hero-section {
+      flex-direction: column;
+      height: auto;
+      padding: 80px 24px;
+      gap: var(--space-lg);
+      text-align: left;
+   }
+
+   .hero-content {max-width: 100%;}
+
+   .hero-image-wrapper {
+      width: 70%;
+      max-width: 280px;
+      align-self: flex-end;
+   }
+
+   .new-music-section {
+      padding: 80px 24px;
+   }
+
+   .new-music-header {
+      text-align: center;
+   }
+
+   .soundboard-content {
+      grid-template-columns: 1fr;
+   }
+
+   .soundboard-section {
+      padding: 80px 24px;
+   }
+
+   .articles-content {
+      grid-template-columns: 1fr;
+   }
+
+   .articles-section {
+      padding: 80px 24px;
+   }
+
+   .interview-box {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+   }
+
+   .video-wrapper {
+      grid-row: 1;
+      width: 100%;
+      max-width: 100%;
+   }
+   .interview-title {
+      grid-row: 2;
+      margin-top: var(--space-md);
+   }
+
+   .interview-subtitle {
+      grid-row: 3;
+   }
+   .interview-description {
+      grid-row: 4;
+   }
+   .interviews-section {
+      padding: 80px 24px;
+   }
+
+   .page-footer {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: var(--space-lg);
+      padding: 40px 24px;
+   }
+
+   .page-footer h1 {
+      grid-column: 1 / -1;
+   }
+
+   .copyright {
+      grid-column: 1 / -1;
+      margin-top: 0;
+   }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+   .hero-section {
+      padding: 24px 16px 16px;
+   }
 
-@media (max-width: 320px) {}
+   .hero-image-wrapper {
+      width: 90%;
+      max-width: 100%;
+      align-self: center;
+   }
+
+   .hero-buttons {
+      flex-wrap:wrap;
+   }
+
+   .new-music-box {
+      grid-template-columns: 80px 1fr;
+   }
+   .album-wrapper {
+      width: 80px;
+      height: 80px;
+   }
+   .interview-box {
+      gap: var(--space-md);
+   }
+   .page-footer {
+      grid-template-columns: 1fr;
+   }
+}
