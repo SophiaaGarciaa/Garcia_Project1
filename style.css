@@ -3,11 +3,11 @@
    ================================= */
 :root {
    /* Brand Color */
-   --main-color: #3D9EFF;
-   --main-color-dark: #1687f9;
+   --main-color: #0057ad;
+   --main-color-dark: #00458b;
    --secondary-color: #ff6978;
    --third-color: #b943a8;
-   --fourth-color: #766ed3;
+   --fourth-color: #625ab4;
    --color-black: #000;
    --color-white: #fff;
    --color-text-muted: #999999;
@@ -230,7 +230,7 @@ img {
 .hero-label {
    font-family: var(--font-body);
    font-size: var(--font-size-small);
-   color: var(--main-color);
+   color: #2789eb;
    letter-spacing: 0.15rem;
    text-transform: capitalize;
 }
@@ -240,6 +240,7 @@ img {
    color: var(--color-white);
    text-transform: uppercase;
    line-height: 1.05;
+   font-family: var(--font-headings);
 }
 
 .hero-image-wrapper {
@@ -308,6 +309,7 @@ img {
    text-align: center;
    letter-spacing: .15rem;
    margin-bottom: var(--space-xl);
+   font-family: var(--font-headings);
 }
 
 .new-music-content {
@@ -385,6 +387,7 @@ img {
    font-size: var(--font-size-section);
    margin-bottom: var(--space-xl);
    letter-spacing: 0.15rem;
+   font-family: var(--font-headings);
 }
 
 .soundboard-content {
@@ -444,6 +447,7 @@ img {
    color: var(--color-black);
    margin-bottom: var(--space-xl);
    letter-spacing: 0.15rem;
+   font-family: var(--font-headings);
 }
 
 .articles-content {
@@ -498,6 +502,7 @@ img {
    font-size: var(--font-size-section);
    margin-bottom: var(--space-xl);
    letter-spacing: 0.15rem;
+   font-family: var(--font-headings);
 }
 
 .interviews-content {
