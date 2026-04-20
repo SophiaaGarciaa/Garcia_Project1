@@ -5,41 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forte - Music Journalism</title>
+
+    <!-- SEO META TAGS -->
+    <meta name="description"
+        content="Forte is a creative digital magazine that follows everything regarding music. From Interviews, Podcasts, Articles, and new music, this site provides a comprehensive catalog for music lovers.">
+    <meta name="keywords" content="music, journalism, interviews, podcasts, articles, new music">
+    <meta name="author" content="Forte - Music Journalism">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Freeman&family=Imbue:opsz,wght@10..100,100..900&family=Notable&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Freeman&family=Notable&display=swap"
         rel="stylesheet">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- HEADER SECTION-->
-    <header class="page-header">
-        <h1><span class="nav-logo"><a href="#" class="nav-link-active"><i
-                        class="fa-solid fa-compact-disc"></i>Forte</a></span></h1>
+    <header class="page-header" role="banner">
+        <h1><span class="nav-logo"><a href="#" class="nav-link-active" aria-current="page"><i
+                        class="fa-solid fa-compact-disc" aria-hidden="true"></i>Forte</a></span></h1>
 
         <!-- Hamburger Menu -->
         <input type="checkbox" id="ham-toggle" class="ham-checkbox">
-        <label for="ham-toggle" class="ham-btn">
+        <label for="ham-toggle" class="ham-btn" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
         <!-- Navigation -->
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Main navigation">
             <a href="#interviews" class="nav-link">Interviews</a>
             <a href="#soundboard" class="nav-link">Soundboard</a>
             <a href="#articles" class="nav-link">Articles</a>
             <a href="#new-music" class="nav-link">New Music</a>
-            <a href="#" class="nav-link">Login In</a>
+            <a href="#" class="nav-link">Log In</a>
         </nav>
     </header>
     <!-- MAIN -->
@@ -48,14 +55,14 @@
         <section class="hero-section">
             <div class="hero-content">
                 <p class="hero-label">Music Journalism</p>
-                <h1 class="hero-title">Don't Miss A Beat</h1>
+                <h2 class="hero-title">Don't Miss A Beat</h2>
                 <div class="hero-buttons">
                     <a href="#" class="btn">Subscribe</a>
                     <a href="#" class="btn">Browse</a>
                 </div>
             </div>
             <div class="hero-image-wrapper">
-                <img src="assets/images/hero-image.jpg" alt="Hero Image" class="hero-image">
+                <img src="assets/images/hero-image.jpg" alt="Singer performing on stage under blue lights" class="hero-image">
                 <!-- Photo by <a href="https://unsplash.com/@thenightstxlker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tamara Gore</a> on <a href="https://unsplash.com/photos/man-holding-microphone-performing-on-stage-gr-0oDn91cE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
             </div>
         </section>
@@ -64,7 +71,7 @@
         <div class="grid">
             <!-- SOUNDBOARD SECTION-->
             <aside id="soundboard" class="soundboard-section">
-                <h1 class="soundboard-header">Soundboard</h1>
+                <h2 class="soundboard-header">Soundboard</h2>
                 <div class="soundboard-content">
                     <!-- Soundboard Item 1 -->
                     <div class="soundboard-box">
@@ -112,7 +119,7 @@
 
             <!-- NEW MUSIC SECTION-->
             <section id="new-music" class="new-music-section">
-                <h1 class="new-music-header">New Music</h1>
+                <h2 class="new-music-header">New Music</h2>
                 <div class="new-music-content">
                     <!-- New Music Item 1 -->
                     <div class="new-music-box">
@@ -124,13 +131,13 @@
                         <p class="new-music-box-description">J. Cole | Feb 6, 2026</p>
                         <div class="icon-wrapper">
                             <a href="https://open.spotify.com/track/57ENogEkvFsU7Wmt3lvQMG?si=0eaca28a7f9448ae"
-                                class="icon-link"><i class="fa-brands fa-spotify"></i></a>
-                            <a href="https://music.apple.com/us/song/two-six/1875080974" class="icon-link"><i
-                                    class="fa-brands fa-itunes"></i></a>
+                                class="icon-link" aria-label="Listen to Two Six on Spotify"><i class="fa-brands fa-spotify" aria-hidden="true"></i></a>
+                            <a href="https://music.apple.com/us/song/two-six/1875080974" class="icon-link" aria-label="Listen to Two Six on Apple Music"><i
+                                    class="fa-brands fa-itunes" aria-hidden="true"></i></a>
                             <a href="https://soundcloud.com/j-cole/two-six?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-                                class="icon-link"><i class="fa-brands fa-soundcloud"></i></a>
+                                class="icon-link" aria-label="Listen to Two Six on SoundCloud"><i class="fa-brands fa-soundcloud" aria-hidden="true"></i></a>
                             <a href="https://www.pandora.com/artist/j-cole/the-fall-off/2-6/TRjrkbJVdKbgfnm?part=ug-desktop&corr=88985677206687913"
-                                class="icon-link"><i class="fa-brands fa-pandora"></i></i></a>
+                                class="icon-link" aria-label="Listen to Two Six on Pandora"><i class="fa-brands fa-pandora" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <!-- New Music Item 2 -->
@@ -143,13 +150,13 @@
                         <p class="new-music-box-description">Ella Langley | Oct 17, 2025</p>
                         <div class="icon-wrapper">
                             <a href="https://open.spotify.com/track/65DbTqJKhbwqYbZ1Okr0rc?si=8b294a2ccf584137"
-                                class="icon-link"><i class="fa-brands fa-spotify"></i></a>
+                                class="icon-link" aria-label="Listen to Choosing Texas on Spotify"><i class="fa-brands fa-spotify" aria-hidden="true"></i></a>
                             <a href="https://music.apple.com/us/album/choosin-texas-single/1844932149"
-                                class="icon-link"><i class="fa-brands fa-itunes"></i></a>
+                                class="icon-link" aria-label="Listen to Choosing Texas on Apple Music"><i class="fa-brands fa-itunes" aria-hidden="true"></i></a>
                             <a href="https://soundcloud.com/ellalangley/choosin-texas?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-                                class="icon-link"><i class="fa-brands fa-soundcloud"></i></a>
+                                class="icon-link" aria-label="Listen to Choosing Texas on SoundCloud"><i class="fa-brands fa-soundcloud" aria-hidden="true"></i></a>
                             <a href="https://www.pandora.com/artist/ella-langley/choosin-texas/choosin-texas/TRwjcZjXKx5Vcj6?part=ug-desktop&corr=88985677206687913"
-                                class="icon-link"><i class="fa-brands fa-pandora"></i></a>
+                                class="icon-link" aria-label="Listen to Choosing Texas on Pandora"><i class="fa-brands fa-pandora" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <!-- New Music Item 3 -->
@@ -161,21 +168,21 @@
                         <h2 class="new-music-box-title">White Keys</h2>
                         <p class="new-music-box-description">Dominic Fike | Nov 14, 2025</p>
                         <div class="icon-wrapper">
-                            <a href="https://open.spotify.com/track/5ViLKrbyL3HD6wsq3AB9eI?si=4bfab3d1dd804969"><i
-                                    class="fa-brands fa-spotify"></i></a>
-                            <a href="https://music.apple.com/us/album/white-keys-single/1852536368" class="icon-link"><i
-                                    class="fa-brands fa-itunes"></i></a>
+                            <a href="https://open.spotify.com/track/5ViLKrbyL3HD6wsq3AB9eI?si=4bfab3d1dd804969" class="icon-link" aria-label="Listen to White Keys on Spotify"><i class="fa-brands fa-spotify"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://music.apple.com/us/album/white-keys-single/1852536368" class="icon-link" aria-label="Listen to White Keys on Apple Music"><i class="fa-brands fa-itunes"
+                                    aria-hidden="true"></i></a>
                             <a href="https://soundcloud.com/dominicfike/white-keys?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-                                class="icon-link"><i class="fa-brands fa-soundcloud"></i></a>
+                                class="icon-link" aria-label="Listen to White Keys on SoundCloud"><i class="fa-brands fa-soundcloud" aria-hidden="true"></i></a>
                             <a href="https://www.pandora.com/artist/dominic-fike/white-keys/ALkvxVqP7bpjl96?part=ug-desktop&corr=88985677206687913"
-                                class="icon-link"><i class="fa-brands fa-pandora"></i></a>
+                                class="icon-link" aria-label="Listen to White Keys on Pandora"><i class="fa-brands fa-pandora" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- ARTICLES SECTION -->
             <aside id="articles" class="articles-section">
-                <h1 class="articles-header">Articles</h1>
+                <h2 class="articles-header">Articles</h2>
                 <div class="articles-content">
                     <!-- Article Item 1 -->
                     <div class="article-box">
@@ -200,7 +207,7 @@
         </div>
         <!-- INTERVIEWS SECTION -->
         <section id="interviews" class="interviews-section">
-            <h1 class="interviews-header">Interviews</h1>
+            <h2 class="interviews-header">Interviews</h2>
             <div class="interviews-content">
                 <!-- Interview Item 1 -->
                 <div class="interview-box">
@@ -212,7 +219,7 @@
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h2 class="interview-title">Harry Styles Joins Brittany Broski's Court</h2>
-                    <h4 class="interview-subtitle">Royal Court | Feb 25, 2026</h4>
+                    <h3 class="interview-subtitle">Royal Court | Feb 25, 2026</h3>
                     <p class="interview-description">Lord Harry Styles, the guests of all guests, has entered the
                         realm to earn a seat on Lady Brittany Broski's Royal Court!</p>
                 </div>
@@ -226,7 +233,7 @@
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h2 class="interview-title">Lewis Capaldi | CHICKEN SHOP DATE</h2>
-                    <h4 class="interview-subtitle">Amelia Dimoldenberg | May 12, 2023</h4>
+                    <h3 class="interview-subtitle">Amelia Dimoldenberg | May 12, 2023</h3>
                     <p class="interview-description">Amelia traveled to Glasgow to meet Lewis Capaldi for a date at The
                         Blue Lagoon</p>
                 </div>
@@ -235,7 +242,7 @@
     </main>
     <!-- FOOTER SECTION -->
     <footer class="page-footer">
-        <h1><span class="footer-logo"><i class="fa-solid fa-compact-disc"></i>Forte</span></h1>
+        <span class="footer-logo"><i class="fa-solid fa-compact-disc"></i>Forte</span>
         <p class="copyright">&copy; 2026 Sophia Garcia. All rights reserved.</p>
         <div class="site-map">
             <p class="site-map-label">Site Map</p>
@@ -248,7 +255,7 @@
         <div class="contacts">
             <a href="#" class="contact-link">Contact Us</a>
             <a href="#" class="contact-link">Subscribe</a>
-            <a href="#" class="contact-link">Login In</a>
+            <a href="#" class="contact-link">Log In</a>
         </div>
     </footer>
 </body>
