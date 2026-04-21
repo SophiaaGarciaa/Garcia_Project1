@@ -205,7 +205,7 @@ img {
    align-items: center;
    gap: var(--space-xl);
    justify-content: space-between;
-   background-image: url(assets/images/hero-background-image.jpg);
+   background-image: url(assets/images/hero-background-image.webp);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
